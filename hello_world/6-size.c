@@ -1,18 +1,20 @@
 #include<stdio.h>
+/**
+ * main - prints size of various types
+ *
+ * Return: 0
+ */
 
 int main(void)
 {
-	char:4
-        int:4
-	float:4
-	long int:4
-	double:4
-	
-	
-	printf("Size of char pointer: %d\n"     ,sizeof(char*));
-	printf("\nSize of int pointer: %d\n"      ,sizeof(int*));
-        printf("\nSize of float pointer: %d\n"    ,sizeof(float*));
-        printf("\nSize of long int pointer: %d\n" ,sizeof(long int*));
-        printf("\nSize of double pointer: %d\n" ,sizeof(double*));
+	int intData;
+        float floatData;
+	char charData;
+	double doubleData;
+
+	printf("Size of int is %zu bytes\n", sizeof(intData));
+	printf("Size of float is %zu bytes\n", sizeof(floatData));
+	printf("Size of char is %zu byte\n", sizeof(charData));
+	printf("Size of double is %zu bytes\n", sizeof(doubleData));	
 	return (0);
 }
