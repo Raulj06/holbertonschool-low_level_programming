@@ -1,2 +1,4 @@
 #!/bin/bash
-puts -c "Programming is like building a multilingual puzzle"
+char ch [0]
+
+puts "Programming is like building a multilingual puzzle";
