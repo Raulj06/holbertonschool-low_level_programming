@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
 /**
  * main - alphabet in lowercase
  *
@@ -7,11 +9,17 @@
 
 int main(void)
 {
-	for(int x = 'A'; x <= 'Z'; x++)
-	{
-	 x = tolower(x);
-	 putchar(x);
-}
+	char low;
+
+
+	for(int x = 'a'; x <= 'z'; low++)
+	 putchar(low);	     
+	 
+	for(int x = 'A'; x <= 'Z'; low++)
+	 putchar('\n');
+	       
+	 putchar(low);
+
 	return(0);
 }
 
