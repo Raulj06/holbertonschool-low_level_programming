@@ -1,11 +1,11 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
- /**
-  *main - script random number to variables
-  *
-  *Return: 0
-  */
+/**
+ * main - script random number to variables
+ *
+ * Return: 0
+ */
 
 int main(void)
 {
