@@ -5,7 +5,7 @@
  *@c: letter test
  * Return: Always 0
  */
-int _islower(int c);
+int _islower(int c)
 {
 
 	if (c > 96 && c < 122)
