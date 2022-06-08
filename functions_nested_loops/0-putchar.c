@@ -1,4 +1,4 @@
-#include<holberton.h>
+#include"_putchar"
 
 /**
  * main - prints putchar
@@ -7,16 +7,15 @@
 
 int main(void)
 {
-	_putchar('h');
-	_putchar('o');
-	_putchar('l');
-	_putchar('b');
-	_putchar('e');
-	_putchar('r');
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
 	_putchar('t');
-	_putchar('o');
-	_putchar('n');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	
-	_putchar('\n')
 	return (0);
 }
