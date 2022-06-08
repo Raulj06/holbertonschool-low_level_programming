@@ -1,4 +1,4 @@
-#include"1-main.c"
+#include"main.h"
 /**
  * main - print alphabet in lowercase
  * Return: 0
