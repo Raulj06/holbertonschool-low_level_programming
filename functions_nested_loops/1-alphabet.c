@@ -5,11 +5,9 @@
  * Return: 0
 */
 
-int main(void);
-{
-	char n;
+void print_alphabet(void);
 
-	void print_alphabet(void);
+	char n;
 
 	for (n = 'a' ; n = 'z'; n++)
 
