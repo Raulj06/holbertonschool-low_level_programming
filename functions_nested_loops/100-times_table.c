@@ -1,14 +1,11 @@
 #include "main.h"
-
 /**
- * prints_times_table - print the n times table
+ * print_times_table - prints 0 times table
  *@n: test
- * Return: Always 0.
+ *
  */
-
 void print_times_table(int n)
 {
-
 	int num, multi, total;
 
 	if (n >= 0 && n <= 15)
