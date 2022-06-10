@@ -1,8 +1,8 @@
 /**
- * main - cause infinite loop
+ * main - cause infinite loop, infinite loop avoided
  * putchar_i - causes an infinite loop
  * Return: 0
- *
+ * 
  */
 
 int main(void)
