@@ -1,9 +1,7 @@
 #include <stdio.h>
 /**
  * main - cause infinite loop, infinite loop avoided
- *
  * Return: 0
- *
  */
 
 int main(void)
