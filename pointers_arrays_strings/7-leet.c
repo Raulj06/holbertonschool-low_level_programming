@@ -2,7 +2,7 @@
 
 /**
  *leet - encodes a string
- *@s: test
+ *@str: test
  *Return: str
  */
 
