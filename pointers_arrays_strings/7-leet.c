@@ -3,23 +3,25 @@
 /**
  *leet - encodes a string
  *@s: test
- *Return: s
+ *Return: str
  */
 
-char *leet(char *s)
+char *leet(char *str)
 {
-	int i;
-	int j;
-	char array_1[] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
-	char array_2[] = {'4', '3', '0', '7', '1', '4', '3', '0', '7', '1'};
+	int indx1 = 0, indx2;
+	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (str[indx1])
 	{
-		for (j = 0; array_1[j] != '\0'; j++)
+		for (indx2 = 0; indx2 <= 7; indx2++)
 		{
-			if (s[i] == array_1[j])
-				s[i] = array_2[j];
+			if (str[indx1] == leet[indx2] ||
+			    str[indx1] - 32 == leet[indx2])
+				str[indx1] = indx2 + '0';
 		}
+
+		indx1++;
 	}
-	return (s);
+
+	return (str);
 }
