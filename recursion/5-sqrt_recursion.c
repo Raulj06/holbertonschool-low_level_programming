@@ -3,7 +3,7 @@
 /**
  *_sqrt_find - find the square root
  *@n: test
- *@number: test
+ *@num: test
  *Return: the square root
  */
 
