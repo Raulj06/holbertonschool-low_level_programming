@@ -6,7 +6,7 @@
  *@argc: test
  *@argv: test
  *@counter: test
- *Return: 0 
+ *Return: 0
  */
 
 int main(int argc, char *argv[])
