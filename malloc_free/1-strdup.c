@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * *_strdup - returns a pointer 
+ * *_strdup - returns a pointer
  * @str: pointer of the string
  *
- * Return: pointer 
+ * Return: pointer
  */
 
 char *_strdup(char *str)
