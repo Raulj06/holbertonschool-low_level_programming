@@ -5,7 +5,6 @@
  *main - print all arguments
  *@argc: test
  *@argv: test
- *@counter: test
  *Return: 0
  */
 
