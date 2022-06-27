@@ -1,17 +1,15 @@
 #include<stdlib.h>
 #include "main.h"
-
 /**
  * *string_nconcat - concatenates two strings
  *@s1: test
  *@s2: test
  *@n: test
- *Return:
+ *Return: concatenate
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-
 	unsigned int count, count2, i, j, sum = 0;
 	char *s;
 
