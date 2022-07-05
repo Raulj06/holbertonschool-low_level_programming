@@ -21,7 +21,7 @@ void print_string(va_list ap);
 typedef struct function
 {
 	char function;
-	void(*f)(va_list ap);
+	void (*f)(va_list ap);
 } f_t;
 
 #endif
