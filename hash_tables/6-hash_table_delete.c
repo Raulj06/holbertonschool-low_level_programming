@@ -1,33 +1,41 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_print - prints a hash table
- * @hash: hast table to print
+ * free_link_list - free linked list in hash table
+ * @head: beginning of linked list
+ * Return: none
  */
-void hash_table_print(const hash_table_t *hash)
-{
-	unsigned long int i;
-	int flag = 0;
-	hash_node_t *temp;
 
-	if (hash)
+void free_link_list(hash_node_t *head)
+{
+	hash_node_t *pop_candidate;
+	hash_node_t *change_node;
+
+	pop_candidate = head;
+	while (pop_candidate)
 	{
-		printf("{");
-		for (i = 0; i < hash->size; i++)
-		{
-			temp = hash->array[i];
-			while (temp != NULL)
-			{
-				if (flag == 0)
-				{
-					printf("\'%s\': \'%s\'", temp->key, temp->value);
-					flag = 1;
-				}
-				else
-					printf(", \'%s\': \'%s\'", temp->key, temp->value);
-				temp = temp->next;
-			}
-		}
-		printf("}\n");
+		change_node = pop_candidate->next;
+		free(pop_candidate->value);
+		free(pop_candidate->key);
+		free(pop_candidate);
+		pop_candidate = change_node;
 	}
+}
+
+/**
+ * hash_table_delete - free hash table
+ * @hash: hash table to be freed
+ * Return: none
+ */
+void hash_table_delete(hash_table_t *hash)
+{
+	size_t idx = 0;
+
+	while (idx < hash->size)
+	{
+		free_link_list(hash->array[idx]);
+		idx++;
+	}
+	free(hash->array);
+	free(hash);
 }
