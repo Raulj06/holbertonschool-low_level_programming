@@ -13,7 +13,7 @@ void print_array(int *array, int first, int l)
 	if (first <= l)
 	{
 		printf("Searching in array: %d", array[first]);
-		for (i = first + 1; i <= last; i++)
+		for (i = first + 1; i <= l; i++)
 		{
 			printf(", %d", array[i]);
 		}
