@@ -6,7 +6,7 @@
  * @first: first
  * @l: last element
  */
-void print_array(int *array, int first, int last)
+void print_array(int *array, int first, int l)
 {
 	int i;
 
@@ -38,7 +38,7 @@ int binary_search(int *array, size_t size, int value)
 		print_array(array, first, l);
 		while (first <= l)
 		{
-			mid = (first + l) / 2;
+			m = (first + l) / 2;
 			if (array[m] < value)
 			{
 				first = m + 1;
